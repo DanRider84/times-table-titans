@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Times Table Titans</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
 <body>
     <h1>Times Table Titans</h1>
-    <div id="quiz"></div>
-    <button id="submitBtn">Submit Quiz</button>
-    <div id="results"></div>
-    <div id="congratsModal" class="modal">
+
+    <main>
+        <div id="quiz"></div>
+
+        <button id="submitBtn" type="button">Submit Quiz</button>
+
+        <div id="results"></div>
+    </main>
+
+    <div id="congratsModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="modal-content">
             <h2>🎉 Congratulations!</h2>
             <p>You got all questions correct.</p>
-            <button onclick="closeModal()">Start New Quiz</button>
+            <button type="button" onclick="closeModal()">Start New Quiz</button>
         </div>
     </div>
-    <script src="assets/script/script.js"></script>
-</body>
 
+    <script src="assets/js/script.js" defer></script>
+</body>
 </html>
